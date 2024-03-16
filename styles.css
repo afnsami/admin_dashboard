@@ -3,14 +3,16 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    /* border: 1px solid khaki; */
+    /* border: 1px solid blue; */
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 20% 80%;
 }
+
+
 
 /*SIDEBAR*/
 .sidebar {
@@ -22,54 +24,111 @@ body {
     background-color: rgb(12, 12, 12);
 }
 .sidebarOptions {
-    padding-left: 21px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
-}
-.sidebarOptions li {
-    padding: 10px;
-}
-.sidebarOptions li:hover {
-    background-color: rgb(40, 40, 40);
-}
-.sidebarLogo {
-    font-size: 25px;
-    color: orange;
-}
-
-
-
-
-.sidebarLogo {
-    color: orange;
-    padding: 20px;
-}
-.logoText {
-    color: blue;
 }
 .sidebarOptions a {
     display: block;
     color: white;
 }
+.sidebarOptions ul li {
+    padding: 10px;
+    padding-left: 20px;
+}
+.sidebarOptions li:hover {
+    background-color: rgb(40, 40, 40);
+}
+.sidebarOptions ul li a i {
+    margin-right: 10px;
+}
+.sidebarLogo {
+    font-size: 25px;
+    padding: 20px;
+    color: orange;
+}
+.logoText {
+    color: blue;
+}
 
-
+.headerLogo1 {
+    font-size: 30px;
+    color: blue;
+}
+.headerLogo2 {
+    font-size: 60px;
+    color: blue;
+}
 
 
 
 /*HEADER*/
 .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: 35px;
     background-color: rgb(236, 236, 236);
 }
-.searchBar {
-    width: 280px;
-    height: 30px;
+
+
+
+#searchBarContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.fa-search {
+    font-size: 19px;
+}
+#searchBar {
+    width: 100%;
+    height: 35px;
+    text-indent: 18px;
     border-radius: 50px;
+    border: none;
     background-color: white;
 }
+
+
+
+#profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#welcomeInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+span {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.firstRow {
+    display: flex;
+    gap: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondRow {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerButtons {
+    display: flex;
+    gap: 25px;
+}
+
+
+
+
 .userButton {
     width: 85px;
     height: 35px;
@@ -84,10 +143,4 @@ body {
 
 .mainContentContainer {
     background-color: white;
-}
-.ink {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
 }
