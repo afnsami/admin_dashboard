@@ -20,39 +20,48 @@
             <div class="sidebarLogo"><i class="fa-solid fa-table-cells"></i> DASHBOARD</div>
             
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-video"></i> Subscription</a></li>
+                <a href="#"><li><i class="fa-solid fa-house"></i> Home</li></a>
+                <a href="#"><li><i class="fa-solid fa-video"></i> Subscription</li></a>
                 <br>
-                <li><a href="#"><i class="fa-solid fa-message"></i> Messages</a></li>
-                <li><a href="#"><i class="fa-solid fa-clock"></i> History</a></li>
-                <li><a href="#"><i class="fa-solid fa-tasks"></i> Tasks</a></li>
-                <li><a href="#"><i class="fa-solid fa-mobile"></i> Communities</a></li>
+                <a href="#"><li><i class="fa-solid fa-message"></i> Messages</li></a>
+                <a href="#"><li><i class="fa-solid fa-clock"></i> History</li></a>
+                <a href="#"><li><i class="fa-solid fa-tasks"></i> Tasks</li></a>
+                <a href="#"><li><i class="fa-solid fa-mobile"></i> Communities</li></a>
                 <br>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Settings</a></li>
-                <li><a href="#"><i class="fa-solid fa-shield"></i> Privacy</a></li>
-                <li><a href="#"><i class="fa-solid fa-donate"></i> Support</a></li>
+                <a href="#"><li><i class="fa-solid fa-house"></i> Settings</li></a>
+                <a href="#"><li><i class="fa-solid fa-shield"></i> Privacy</li></a>
+                <a href="#"><li><i class="fa-solid fa-donate"></i> Support</li></a>
             </ul>
-
 
         </div>
     </div>
 
     <div class="header">
-        
-        <div class="ink">
-            <i class="fa-solid fa-search"></i>
-            <div class="searchBar"></div>
+        <div class="firstRow">
+
+            <div id="searchBarContainer">
+                <i class="fa-solid fa-search"></i>
+                <input id="searchBar" type="text" placeholder="Search">
+            </div>
+            
+            <div id="profileContainer">
+                <i class="fa-solid fa-bell"></i>
+                <i class="headerLogo1 fa-solid fa-circle"></i>
+                <h3>username</h3>
+            </div>
         </div>
 
-        <i class="fa-solid fa-bell"></i>
-        <i class="logoText fa-solid fa-circle"></i>
-
-        <i class="logoText fa-solid fa-circle"></i>
-        <h2>User (@username)</h2>
-
-        <button class="userButton">New</button>
-        <button class="userButton">Upload</button>
-        <button class="userButton">Share</button>
+        <div class="secondRow">
+            <div id="welcomeInfo">
+                <i class="headerLogo2 fa-solid fa-circle"></i>
+                <h2> New User <span>(@username)</span></h2>
+            </div>
+            <div id="headerButtons">
+                <button class="userButton newButton">New</button>
+                <button class="userButton uploadButton">Upload</button>
+                <button class="userButton shareButton">Share</button>
+            </div>
+        </div>
     </div>
 
     <div class="mainContentContainer">
