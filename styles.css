@@ -9,7 +9,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 18% 81%;
 }
 
 
@@ -33,7 +33,7 @@ body {
 }
 .sidebarOptions ul li {
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 .sidebarOptions li:hover {
     background-color: rgb(40, 40, 40);
@@ -44,6 +44,7 @@ body {
 .sidebarLogo {
     font-size: 25px;
     padding: 20px;
+    padding-left: 25px;
     color: orange;
 }
 .logoText {
@@ -65,21 +66,29 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    padding: 30px 50px;
+    padding: 30px 40px;
     gap: 35px;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(240, 240, 240);
 }
 
 
-
+/*SEARCH AREA*/
+.fa-search {
+    font-size: 19px;
+}
+.iconButton {
+    padding: 7px;
+    border-radius: 50%;
+    border: none;
+}
+.iconButton:hover {
+    background-color: rgb(210, 210, 210);
+}
 #searchBarContainer {
     display: flex;
     align-items: center;
     width: 100%;
     gap: 10px;
-}
-.fa-search {
-    font-size: 19px;
 }
 #searchBar {
     width: 100%;
@@ -90,7 +99,9 @@ body {
     background-color: white;
 }
 
-
+#bellIcon {
+    font-size: 20px;
+}
 
 #profileContainer {
     display: flex;
@@ -125,10 +136,6 @@ span {
     display: flex;
     gap: 25px;
 }
-
-
-
-
 .userButton {
     width: 85px;
     height: 35px;
@@ -139,8 +146,4 @@ span {
 }
 .userButton:active {
     background-color: orangered;
-}
-
-.mainContentContainer {
-    background-color: white;
 }

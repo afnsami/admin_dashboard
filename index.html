@@ -21,14 +21,14 @@
             
             <ul>
                 <a href="#"><li><i class="fa-solid fa-house"></i> Home</li></a>
-                <a href="#"><li><i class="fa-solid fa-video"></i> Subscription</li></a>
+                <a href="#"><li><i class="fa-solid fa-tv"></i> Subscription</li></a>
                 <br>
                 <a href="#"><li><i class="fa-solid fa-message"></i> Messages</li></a>
                 <a href="#"><li><i class="fa-solid fa-clock"></i> History</li></a>
                 <a href="#"><li><i class="fa-solid fa-tasks"></i> Tasks</li></a>
-                <a href="#"><li><i class="fa-solid fa-mobile"></i> Communities</li></a>
+                <a href="#"><li><i class="fa-solid fa-users"></i> Communities</li></a>
                 <br>
-                <a href="#"><li><i class="fa-solid fa-house"></i> Settings</li></a>
+                <a href="#"><li><i class="fa-solid fa-gear"></i> Settings</li></a>
                 <a href="#"><li><i class="fa-solid fa-shield"></i> Privacy</li></a>
                 <a href="#"><li><i class="fa-solid fa-donate"></i> Support</li></a>
             </ul>
@@ -40,12 +40,19 @@
         <div class="firstRow">
 
             <div id="searchBarContainer">
-                <i class="fa-solid fa-search"></i>
-                <input id="searchBar" type="text" placeholder="Search">
+                <button class="iconButton">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <input  id="searchBar" 
+                        type="text"    
+                        placeholder="Search"
+                        maxlength="50">
             </div>
             
             <div id="profileContainer">
-                <i class="fa-solid fa-bell"></i>
+                <button class="iconButton" id="bellIcon">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
                 <i class="headerLogo1 fa-solid fa-circle"></i>
                 <h3>username</h3>
             </div>
@@ -57,9 +64,9 @@
                 <h2> New User <span>(@username)</span></h2>
             </div>
             <div id="headerButtons">
-                <button class="userButton newButton">New</button>
-                <button class="userButton uploadButton">Upload</button>
-                <button class="userButton shareButton">Share</button>
+                <button class="userButton">New</button>
+                <button class="userButton">Upload</button>
+                <button class="userButton">Share</button>
             </div>
         </div>
     </div>
