@@ -5,10 +5,10 @@
     list-style: none;
     text-decoration: none;
     font-family: "JetBrains Mono", monospace;
-    /* border: 1px solid blue; */
 }
 
 body {
+    height: 100vh;
     display: grid;
     grid-template-columns: 270px 1fr;
     grid-template-rows: 18% 82%;
@@ -21,7 +21,7 @@ body {
     display: grid;
     grid-row: 1 / 3;
     width: 270px;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(18, 18, 18);
 }
 
@@ -55,6 +55,7 @@ body {
     gap: 35px;
     background-color: rgb(240, 240, 240);
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+    z-index: 1;
 }
 
 .iconButton {
@@ -188,7 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: top;
     grid-row: 1 / 3;
     gap: 20px;
     padding: 18px;
@@ -203,31 +204,43 @@ body {
 }
 
 .project {
+    max-width: 500px;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
     border-radius: 10px;
     padding: 20px 20px 50px 20px;
+    overflow: auto;
     gap: 10px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.project p {
-    font-size: 18px;
+    transition: 0.5s;
 }
 
 .projectHeadline {
     font-size: 22px;
 }
 
+.project p {
+    font-size: 18px;
+}
+
 
 
 /*ANNOUNCEMENTS*/
-#announcementContainer, #trendingContainer {
+#announcementContainer {
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 18px 30px 0px 30px;
+    gap: 15px;
+    background-color: #e2e8f0ff;
+}
+
+#trendingContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    margin-top: -15px;
     gap: 15px;
     background-color: #e2e8f0ff;
 }
@@ -237,6 +250,7 @@ body {
     flex-direction: column;
     border-radius: 10px;
     padding: 20px 40px;
+    overflow: auto;
     gap: 15px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -274,3 +288,17 @@ body {
     border-radius: 50px;
 }
 
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 16px;
+}
