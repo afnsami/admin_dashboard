@@ -187,7 +187,7 @@ body {
 #projectContainer {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
     grid-row: 1 / 3;
     gap: 20px;
@@ -206,7 +206,6 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    min-width: 300px;
     border-radius: 10px;
     padding: 20px 20px 50px 20px;
     gap: 10px;
@@ -219,16 +218,59 @@ body {
 }
 
 .projectHeadline {
+    font-size: 22px;
 }
 
 
 
 /*ANNOUNCEMENTS*/
-#announcementContainer {
-    background-color: greenyellow;
+#announcementContainer, #trendingContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 15px;
+    background-color: #e2e8f0ff;
 }
+
+#announcementDiv, #trendingDiv {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 40px;
+    gap: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    gap: 7px;
+}
+
+.announcementHeader {
+    font-size: 15px;
+}
+.announcementText {
+    font-size: 14px;
+}
+
 
 /*TRENDINGS*/
 #trendingContainer {
-    background-color: orange;
+    background-color: #e2e8f0ff;
 }
+
+.trendingUser {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+}
+
+.trendingProfilePic {
+    width: 60px;
+    border-radius: 50px;
+}
+
