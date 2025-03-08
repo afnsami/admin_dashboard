@@ -1,5 +1,5 @@
 # Admin Dashboard
-## Live Preview <a href="https://afnsami.github.io/admin-dashboard">HERE</a>
+## Live Preview <a href="https://afnsami.github.io/admin_dashboard">HERE</a>
 
 <img src="images/preview.png">
 
